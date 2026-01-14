@@ -30,7 +30,7 @@ CREATE TABLE `facture` (
   PRIMARY KEY (`id_facture`),
   KEY `id_user` (`id_user`),
   CONSTRAINT `facture_ibfk_1` FOREIGN KEY (`id_user`) REFERENCES `user` (`id_user`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -39,10 +39,6 @@ CREATE TABLE `facture` (
 
 LOCK TABLES `facture` WRITE;
 /*!40000 ALTER TABLE `facture` DISABLE KEYS */;
-INSERT INTO `facture` VALUES
-(1,'2026-01-13 14:38:16',2),
-(2,'2026-01-13 14:38:16',3),
-(3,'2026-01-13 14:38:16',5);
 /*!40000 ALTER TABLE `facture` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -167,16 +163,16 @@ CREATE TABLE `user` (
 LOCK TABLES `user` WRITE;
 /*!40000 ALTER TABLE `user` DISABLE KEYS */;
 INSERT INTO `user` VALUES
-(1,'lacan_admin','PassRT1!','admin'),
-(2,'tech_depannage','Maintenance2026','user'),
-(3,'compta_user','Facture_99','user'),
-(4,'api_bot','Token_XYZ','api'),
-(5,'visiteur','Guest','lecteur'),
-(6,'admin_lacan','Admin@2024','admin'),
-(7,'user_test','User!123','user'),
-(8,'lecteur_pro','ReadOnly#1','lecteur'),
-(9,'api_internal','ApiKey_99','api'),
-(10,'guest_rt','GuestPassword','guest');
+(1,'tb_superadmin','T1touan_Secured!','admin'),
+(2,'support_it_titouan','Helpdesk_TB_2026','user'),
+(3,'manager_stock_01','Stock_Manage_X','user'),
+(4,'service_automate_api','Auth_Token_9988','api'),
+(5,'audit_externe','Consultation_Only','lecteur'),
+(6,'root_titouan','Ultimate_Pass_77','admin'),
+(7,'agent_logistique','Log_Pass_2026','user'),
+(8,'invite_ponctuel','Welcome_RT_123','lecteur'),
+(9,'gateway_backend','C0nnexion_API_V1','api'),
+(10,'maintenance_user','Maint_Secure_TB','user');
 /*!40000 ALTER TABLE `user` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -189,4 +185,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*M!100616 SET NOTE_VERBOSITY=@OLD_NOTE_VERBOSITY */;
 
--- Dump completed on 2026-01-13 14:45:26
+-- Dump completed on 2026-01-14 18:58:17
